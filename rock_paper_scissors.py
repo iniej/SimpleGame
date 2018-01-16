@@ -50,12 +50,12 @@ def decider (num, comp):
 def user_input():
     # Enter a number.
     number = int(input('Enter a number, 1 = rock, 2 = paper and 3 = scissors : '))
-    print('ValueError')
     while number < 1 or number > 3:
         print('Please enter a valid number')
         number = int(input('Enter a number, 1 = rock, 2 = paper and 3 = scissors : '))
     print()
     return number
+
 
 # Call the main function.
 main()
