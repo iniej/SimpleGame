@@ -1,10 +1,7 @@
 # This program lets a user play Rock, Paper, Scissors against the computer.
 import random
 
-def main():
-
-
-
+def choice_random():
     # Generate a random number.
     keep_going = 'y'
 
@@ -42,7 +39,6 @@ def decider (num, comp):
         print('The computer wins, scissors loses to rock')
     elif num == 3 and comp == 2:
         print('The computer loses, paper loses to scissors')
-
     else:
         print('Good game')
 
@@ -55,7 +51,11 @@ def user_input():
         number = int(input('Enter a number, 1 = rock, 2 = paper and 3 = scissors : '))
     print()
     return number
+def main():
+
+    choice_random()
 
 
 # Call the main function.
-main()
+if __name__ == '__main__':
+    main()
